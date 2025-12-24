@@ -71,7 +71,7 @@ def parse_args():
                         help='data path')
 
     # ===== Robust gating / EMA ablation =====
-    parser.add_argument('--gating_layers', type=int, default=2,
+    parser.add_argument('--gating_layers', type=int, default=5,
                         help='Number of layers using G-SNR gating (0/2/5)')
     parser.add_argument('--ema_decay', type=float, default=0.99,
                         help='EMA decay for G-SNR variance normalization')
